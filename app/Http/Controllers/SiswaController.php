@@ -13,7 +13,29 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        $isi = ['merin', 'toto', 'febrianto', 'aida', 'yulia', 'aided', 'regina', 'miwa', 'irma', 'ajiz', 'iqra'];
+
+        $data =
+            [
+                [
+                    "nama" => "merin",
+                    "kelas" => 13,
+                    "hobi" => ['game', 'sare'],
+                    "guru" => [
+                        "nama1" => "ujang",
+                        "nama2" => "usep"
+                    ]
+                ],
+                [
+                    "nama" => "merin",
+                    "kelas" => 13,
+                    "hobi" => ['game', 'sare'],
+                    "guru" => [
+                        "nama1" => "ujang",
+                        "nama2" => "usep"
+                    ]
+                ]
+            ];
+        return $data;
     }
 
     /**
