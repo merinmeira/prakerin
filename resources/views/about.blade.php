@@ -38,27 +38,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 
 	<!-- Animate.css -->
-	<link rel="stylesheet" href="assets/frontend/css/animate.css">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/css/animate.css')}}">
 	<!-- Icomoon Icon Fonts-->
-	<link rel="stylesheet" href="assets/frontend/css/icomoon.css">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/css/icomoon.css')}}">
 	<!-- Bootstrap  -->
-	<link rel="stylesheet" href="assets/frontend/css/bootstrap.css">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/css/bootstrap.css')}}">
 
 	<!-- Magnific Popup -->
-	<link rel="stylesheet" href="assets/frontend/css/magnific-popup.css">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/css/magnific-popup.css')}}">
 
 	<!-- Flexslider  -->
-	<link rel="stylesheet" href="assets/frontend/css/flexslider.css">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/css/flexslider.css')}}">
 
 	<!-- Theme style  -->
-	<link rel="stylesheet" href="assets/frontend/css/style.css">
+	<link rel="stylesheet" href="{{ asset('assets/frontend/css/style.css')}}">
 
 	<!-- Modernizr JS -->
-	<script src="{{ ('assets/frontend/js/modernizr-2.6.2.min.js') }}"></script>
+	<script src="{{ asset('assets/frontend/js/modernizr-2.6.2.min.js') }} "></script>
 	<!-- FOR IE9 below -->
-	<!--[if lt IE 9]>
-	<script src="{{ ('assets/frontend/js/respond.min.js') }}"></script>
-	<![endif]-->
+	<script src="{{ asset('assets/frontend/js/respond.min.js')}}"></script>
 
 	</head>
 	<body>
@@ -85,8 +83,8 @@
 											<li><a href="#">API</a></li>
 										</ul>
 									</li>
-									<li><a href="/about">About</a></li>
-									<li class="active"><a href="/contact">Contact</a></li>
+									<li class="active"><a href="/about">About</a></li>
+									<li><a href="/contact">Contact</a></li>
 								</ul>
 							</div>
 							<div class="col-sm-5">
@@ -116,73 +114,99 @@
 		</div>
 	</nav>
 
-
-	<div id="fh5co-contact" class="fh5co-no-pd-top">
+	<div id="fh5co-content" class="fh5co-no-pd-top">
 		<div class="container">
 			<div class="row animate-box">
-				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
-					<h2><span>Contact Us</span></h2>
+				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+					<h2><span>About Us</span></h2>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-9 col-padded-right">
-					<form action="#">
-						<div class="form-group row">
-							<div class="col-md-6 field">
-								<label for="firstname">First Name</label>
-								<input type="text" name="FName" id="firstname" class="form-control">
-							</div>
-							<div class="col-md-6 field">
-								<label for="lastname">Last Name</label>
-								<input type="text" name="FName" id="lastname" class="form-control">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-6 field">
-								<label for="email">Email</label>
-								<input type="text" name="FName" id="email" class="form-control">
-							</div>
-							<div class="col-md-6 field">
-								<label for="phone">Phone</label>
-								<input type="text" name="FName" id="phone" class="form-control">
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-12 field">
-								<label for="message">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10" class="form-control"></textarea>
-							</div>
-						</div>
-						<div class="form-group row">
-							<div class="col-md-12 field">
-								<input type="submit" id="submit" class="btn btn-primary" value="Send Message">
-							</div>
-						</div>
-					</form>
+				<div class="col-md-6 col-md-offset-3">
+					<div class="fh5co-staff">
+						<img src="assets/frontend/images/merin.jpg" alt="Free HTML5 Templates by FreeHTML5.co">
+						<h3>Merin Meira</h3>
+						<strong class="role">CEO, Founder</strong>
+						<p>Quos quia provident conse culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita.</p>
+						<ul class="fh5co-social-icons">
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-dribbble"></i></a></li>
+							<li><a href="#"><i class="icon-github"></i></a></li>
+						</ul>
+					</div>
 				</div>
-
-				<aside id="sidebar">
-					<div class="col-md-3">
-						<div class="side animate-box">
-							<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
-								<h2><span>About Me</span></h2>
-							</div>
-							<div class="fh5co-staff">
-								<img src="assets/frontend/images/merin.jpg" alt="Free HTML5 Templates by FreeHTML5.co">
-								<h3>Merin Meira</h3>
-								<strong class="role">CEO, Founder</strong>
-								<p>Quos quia provident conse culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita.</p>
-								<ul class="fh5co-social-icons">
-									<li><a href="#"><i class="icon-facebook"></i></a></li>
-									<li><a href="#"><i class="icon-twitter"></i></a></li>
-									<li><a href="#"><i class="icon-dribbble"></i></a></li>
-									<li><a href="#"><i class="icon-github"></i></a></li>
-								</ul>
-							</div>
+			</div>
+		</div>
+	</div>
+	<div id="fh5co-blog">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
+					<h2><span>My Posts</span></h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<div class="title text-center">
+							<span class="posted-on">Nov. 15th 2016</span>
+							<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
+							<span class="category">Lifestyle</span>
+						</div>
+						<a href="#"><img class="img-responsive" src="assets/frontend/images/blog-2.jpg" alt=""></a>
+						<div class="blog-text text-center">
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="fh5co-social-icons">
+								<li>Share:</li>
+								<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+							</ul>
 						</div>
 					</div>
-				</aside>
-
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<div class="title text-center">
+							<span class="posted-on">Nov. 15th 2016</span>
+							<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
+							<span class="category">Lifestyle</span>
+						</div>
+						<a href="#"><img class="img-responsive" src="assets/frontend/images/blog-1.jpg" alt=""></a>
+						<div class="blog-text text-center">
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="fh5co-social-icons">
+								<li>Share:</li>
+								<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<div class="title text-center">
+							<span class="posted-on">Nov. 15th 2016</span>
+							<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
+							<span class="category">Lifestyle</span>
+						</div>
+						<a href="#"><img class="img-responsive" src="assets/frontend/images/blog-2.jpg" alt=""></a>
+						<div class="blog-text text-center">
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+							<ul class="fh5co-social-icons">
+								<li>Share:</li>
+								<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-linkedin-with-circle"></i></a></li>
+								<li><a href="#"><i class="icon-dribbble-with-circle"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -197,16 +221,16 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(assets/frontend/images/beatles.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/insta-1.jpg);"></div>
 			</div>
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(assets/frontend/images/cuco.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/insta-2.jpg);"></div>
 			</div>
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(assets/frontend/images/mustache.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/insta-3.jpg);"></div>
 			</div>
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(assets/frontend/images/banda.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/insta-4.jpg);"></div>
 			</div>
 		</div>
 	</div>
@@ -266,21 +290,21 @@
 		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
 	</div>
 
-	<!-- jQuery -->
-	<script src="{{ ('assets/frontend/js/jquery.min.js')}} "></script>
+<!-- jQuery -->
+	<script src="{{ asset('assets/frontend/js/jquery.min.js')}}"></script>
 	<!-- jQuery Easing -->
-	<script src="{{ ('assets/frontend/js/jquery.easing.1.3.js') }}"></script>
+	<script src="{{ asset('assets/frontend/js/jquery.easing.1.3.js')}}"></script>
 	<!-- Bootstrap -->
-	<script src="{{ ('assets/frontend/js/bootstrap.min.js') }}"></script>
+	<script src="{{ asset('assets/frontend/js/bootstrap.min.js')}}"></script>
 	<!-- Waypoints -->
-	<script src="{{ ('assets/frontend/js/jquery.waypoints.min.js')}}"></script>
+	<script src="{{ asset('assets/frontend/js/jquery.waypoints.min.js')}}"></script>
 	<!-- Flexslider -->
-	<script src="{{ ('assets/frontend/js/jquery.flexslider-min.js') }}"></script>
+	<script src="{{ asset('assets/frontend/js/jquery.flexslider-min.js')}}"></script>
 	<!-- Magnific Popup -->
-	<script src="{{ ('assets/frontend/js/jquery.magnific-popup.min.js') }}"></script>
-	<script src="{{  ('assets/frontend/js/magnific-popup-options.js') }}"></script>
+	<script src="{{ asset('assets/frontend/js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{ asset('assets/frontend/js/magnific-popup-options.js')}}"></script>
 	<!-- Main -->
-	<script src="{{ ('assets/frontend/js/main.js')}}"></script>
+	<script src="{{ asset('assets/frontend/js/main.js')}}"></script>
 
 	</body>
 </html>

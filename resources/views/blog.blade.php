@@ -54,7 +54,7 @@
 	<link rel="stylesheet" href="assets/frontend/css/style.css">
 
 	<!-- Modernizr JS -->
-	<script src="{{ ('assets/frontend/js/modernizr-2.6.2.min.js')}}"></script>
+	<script src="{{  ('assets/frontend/js/modernizr-2.6.2.min.js') }}  "></script>
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="{{ ('assets/frontend/js/respond.min.js')}}"></script>
@@ -74,9 +74,9 @@
 						<div class="row">
 							<div class="col-sm-7 text-left menu-1">
 								<ul>
-									<li class="active"><a href="/">Home</a></li>
+									<li><a href="/">Home</a></li>
 									<li><a href="/blog">Lifestyle</a></li>
-									<li class="has-dropdown">
+									<li class="has-dropdown active">
 										<a href="/blog">Blog</a>
 										<ul class="dropdown">
 											<li><a href="#">Web Design</a></li>
@@ -116,123 +116,14 @@
 		</div>
 	</nav>
 
-	<aside id="fh5co-hero">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8">
-					<div class="flexslider animate-box">
-						<ul class="slides">
-					   	<li style="background-image: url(assets/frontend/images/healt.jpg);">
-					   		<div class="overlay-gradient"></div>
-					   		<div class="container-fluid">
-					   			<div class="row">
-						   			<div class="col-md-10 col-md-offset-1 slider-text">
-						   				<div class="slider-text-inner">
-						   					<h1>Not Every Project Needs To Be Perfect</h1>
-												<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-												<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
-						   				</div>
-						   			</div>
-						   		</div>
-					   		</div>
-					   	</li>
-					   	<li style="background-image: url(assets/frontend/images/makanan.jpg);">
-					   		<div class="overlay-gradient"></div>
-					   		<div class="container-fluid">
-					   			<div class="row">
-						   			<div class="col-md-10 col-md-offset-1 slider-text">
-						   				<div class="slider-text-inner">
-						   					<h1>Minimal &amp; Clean Blog WordPress</h1>
-												<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-												<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
-						   				</div>
-						   			</div>
-						   		</div>
-					   		</div>
-					   	</li>
-					   	<li style="background-image: url(/assets/frontend/images/lifestyle.jpg);">
-					   		<div class="overlay-gradient"></div>
-					   		<div class="container-fluid">
-					   			<div class="row">
-						   			<div class="col-md-10 col-md-offset-1 slider-text">
-						   				<div class="slider-text-inner">
-						   					<h1>What Would You Like To Learn?</h1>
-												<h2>Free html5 templates Made by <a href="http://freehtml5.co/" target="_blank">freehtml5.co</a></h2>
-												<p class="ct"><a href="#">Learn More <i class="icon-arrow-right"></i></a></p>
-						   				</div>
-						   			</div>
-						   		</div>
-					   		</div>
-					   	</li>
-					  	</ul>
-				  	</div>
-				</div>
-				<div class="col-md-4">
-					<a href="#" class="featured text-center animate-box" style="background-image: url(assets/frontend/images/skate.jpg);">
-						<div class="desc">
-							<span class="date">Dec 25, 2016</span>
-							<h3>Every Start has an End</h3>
-							<span class="category">Inspirational</span>
-						</div>
-					</a>
-					<a href="#" class="featured text-center animate-box" style="background-image: url(assets/frontend/images/bmx.jpg);">
-						<div class="desc">
-							<span class="date">Dec 25, 2016</span>
-							<h3>Most Beautiful Website in 2016</h3>
-							<span class="category">Inspirational</span>
-						</div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</aside>
 
-	<div id="fh5co-blog-popular">
+	<div id="fh5co-content" class="fh5co-no-pd-top">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-12 col-md-offset-0 text-center fh5co-heading">
-					<h2><span>Popular Post</span></h2>
+					<h2><span>Our Blog</span></h2>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-3">
-					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="assets/frontend/images/banda.jpg" alt=""></a>
-						<div class="blog-text">
-							<h3><a href="#">Conquer The World</a></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="assets/frontend/images/mustache.jpg" alt=""></a>
-						<div class="blog-text">
-							<h3><a href="#">List Minimal Design</a></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="assets/frontend/images/start.jpg" alt=""></a>
-						<div class="blog-text">
-							<h3><a href="#">Modeling Spotted</a></h3>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-3">
-					<div class="fh5co-blog animate-box">
-						<a href="#"><img class="img-responsive" src="assets/frontend/images/efek.jpg" alt=""></a>
-						<div class="blog-text">
-							<h3><a href="#">Around The World</a></h3>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div id="fh5co-content">
-		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-padded-right">
 					<div class="row">
@@ -240,10 +131,10 @@
 							<div class="fh5co-blog animate-box">
 								<div class="title title-pin text-center">
 									<span class="posted-on">Nov. 15th 2016</span>
-									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
+									<h3><a href="#">Sampurasun!!!!</a></h3>
 									<span class="category">Lifestyle</span>
 								</div>
-								<a href="#"><img class="img-responsive" src="assets/frontend/images/.jpg" alt=""></a>
+								<a href="#"><img class="img-responsive" src="assets/frontend/images/dcdc.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 									<ul class="fh5co-social-icons">
@@ -263,7 +154,7 @@
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
 									<span class="category">Lifestyle</span>
 								</div>
-								<a href="#"><img class="img-responsive" src="assets/frontend/images/party.jpg" alt=""></a>
+								<a href="#"><img class="img-responsive" src="assets/frontend/images/acdc.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 									<ul class="fh5co-social-icons">
@@ -283,7 +174,7 @@
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
 									<span class="category">Lifestyle</span>
 								</div>
-								<a href="#"><img class="img-responsive" src="assets/frontend/images/smoke.jpg" alt=""></a>
+								<a href="#"><img class="img-responsive" src="assets/frontend/images/metalica.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 									<ul class="fh5co-social-icons">
@@ -303,7 +194,7 @@
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
 									<span class="category">Lifestyle</span>
 								</div>
-								<a href="#"><img class="img-responsive" src="assets/frontend/images/home.jpg" alt=""></a>
+								<a href="#"><img class="img-responsive" src="assets/frontend/images/stone.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 									<ul class="fh5co-social-icons">
@@ -323,7 +214,7 @@
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
 									<span class="category">Lifestyle</span>
 								</div>
-								<a href="#"><img class="img-responsive" src="assets/frontend/images/dybala.jpg" alt=""></a>
+								<a href="#"><img class="img-responsive" src="assets/frontend/images/logo.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 									<ul class="fh5co-social-icons">
@@ -364,7 +255,7 @@
 							</div>
 							<div class="blog-entry">
 								<a href="#">
-									<img src="assets/frontend/images/blog-1.jpg" class="img-responsive" alt="">
+									<img src="assets/frontend/images/sunshine.jpg" class="img-responsive" alt="">
 									<div class="desc">
 										<span class="date">Dec. 25, 2016</span>
 										<h3>Most Beautiful Site in 2016</h3>
@@ -373,7 +264,7 @@
 							</div>
 							<div class="blog-entry">
 								<a href="#">
-									<img src="assets/frontend/images/blog-2.jpg" class="img-responsive" alt="">
+									<img src="assets/frontend/images/jason.jpg" class="img-responsive" alt="">
 									<div class="desc">
 										<span class="date">Dec. 25, 2016</span>
 										<h3>Most Beautiful Site in 2016</h3>
@@ -382,7 +273,7 @@
 							</div>
 							<div class="blog-entry">
 								<a href="#">
-									<img src="assets/frontend/images/blog-1.jpg" class="img-responsive" alt="">
+									<img src="assets/frontend/images/ikhsan.jpg" class="img-responsive" alt="">
 									<div class="desc">
 										<span class="date">Dec. 25, 2016</span>
 										<h3>Most Beautiful Site in 2016</h3>
@@ -409,7 +300,7 @@
 							</div>
 							<div class="row">
 								<div class="col-md-12">
-									<div class="insta" style="background-image: url(assets/frontend/images/fur.jpg);">
+									<div class="insta" style="background-image: url(assets/frontend/images/beatles.jpg);">
 
 									</div>
 								</div>
@@ -431,17 +322,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
-				<div class="insta" style="background-image: url(assets/frontend/images/beatles.jpg);"></div>
+			<div class="col-md-3 nopadding animate-box">
+				<div class="insta" style="background-image: url(images/panturas.jpg);"></div>
 			</div>
-			<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
-				<div class="insta" style="background-image: url(assets/frontend/images/monkeys.jpg);"></div>
+			<div class="col-md-3 nopadding animate-box">
+				<div class="insta" style="background-image: url(images/banda.jpg);"></div>
 			</div>
-			<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
-				<div class="insta" style="background-image: url(assets/frontend/images/cuco.jpg);"></div>
+			<div class="col-md-3 nopadding animate-box">
+				<div class="insta" style="background-image: url(images/jason.jpg);"></div>
 			</div>
-			<div class="col-md-3 nopadding animate-box" data-animate-effect="fadeIn">
-				<div class="insta" style="background-image: url(assets/frontend/images/rex.jpg);"></div>
+			<div class="col-md-3 nopadding animate-box">
+				<div class="insta" style="background-image: url(images/stone.jpg);"></div>
 			</div>
 		</div>
 	</div>
@@ -502,20 +393,20 @@
 	</div>
 
 	<!-- jQuery -->
-	<script src="{{ ('assets/frontend/js/jquery.min.js')}}"></script>
+	<script src="{{ ('assets/frontend/js/jquery.min.js') }}"></script>
 	<!-- jQuery Easing -->
-	<script src="{{ ('assets/frontend/js/jquery.easing.1.3.js')}}"></script>
+	<script src="{{ ('assets/frontend/js/jquery.easing.1.3.js') }}"></script>
 	<!-- Bootstrap -->
-	<script src="{{ ('assets/frontend/js/bootstrap.min.js')}}"></script>
+	<script src="{{ ('assets/frontend/js/bootstrap.min.js') }}"></script>
 	<!-- Waypoints -->
-	<script src="{{ ('assets/frontend/js/jquery.waypoints.min.js')}}"></script>
+	<script src="{{ ('assets/frontend/js/jquery.waypoints.min.js') }}"></script>
 	<!-- Flexslider -->
-	<script src="{{ ('assets/frontend/js/jquery.flexslider-min.js')}}"></script>
+	<script src="{{ ('assets/frontend/js/jquery.flexslider-min.js') }}"></script>
 	<!-- Magnific Popup -->
-	<script src="{{ ('assets/frontend/js/jquery.magnific-popup.min.js')}}"></script>
-	<script src="{{ ('assets/frontend/js/magnific-popup-options.js')}}"></script>
+	<script src="{{ ('assets/frontend/js/jquery.magnific-popup.min.js') }}"></script>
+	<script src="{{ ('assets/frontend/js/magnific-popup-options.js') }}"></script>
 	<!-- Main -->
-	<script src="{{ ('assets/frontend/js/main.js')}}"></script>
+	<script src="{{ ('assets/frontend/js/main.js') }} "></script>
 
 	</body>
 </html>
