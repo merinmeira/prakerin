@@ -170,15 +170,15 @@
 				<div class="col-md-4">
 					<a href="#" class="featured text-center animate-box" style="background-image: url(assets/frontend/images/skate.jpg);">
 						<div class="desc">
-							<span class="date">Dec 25, 2016</span>
-							<h3>Every Start has an End</h3>
+							<span class="date">July 06, 2019</span>
+							<h3>Sport</h3>
 							<span class="category">Inspirational</span>
 						</div>
 					</a>
 					<a href="#" class="featured text-center animate-box" style="background-image: url(assets/frontend/images/bmx.jpg);">
 						<div class="desc">
-							<span class="date">Dec 25, 2016</span>
-							<h3>Most Beautiful Website in 2016</h3>
+							<span class="date">July 06, 2019</span>
+							<h3> Sport</h3>
 							<span class="category">Inspirational</span>
 						</div>
 					</a>
@@ -243,7 +243,7 @@
 									<h3><a href="#">Modeling &amp; Stylist in USA</a></h3>
 									<span class="category">Lifestyle</span>
 								</div>
-								<a href="#"><img class="img-responsive" src="assets/frontend/images/.jpg" alt=""></a>
+								<a href="#"><img class="img-responsive" src="assets/frontend/images/party.jpg" alt=""></a>
 								<div class="blog-text text-center">
 									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius. Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 									<ul class="fh5co-social-icons">
@@ -456,21 +456,21 @@
 				<div class="col-md-4 col-md-push-1">
 					<h4>Links</h4>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Lifestyle</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/blog">Lifestyle</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-4 col-md-push-1">
 					<h4>Contact Information</h4>
 					<ul class="fh5co-footer-links">
-						<li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-						<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-						<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-						<li><a href="http://freehtml5.co">FreeHTML5.co</a></li>
+						<li>28 Mei 2003 <br> Bandung, Jawa Barat</li>
+						<li><a href="tel://1234567920">08996992681</a></li>
+						<li><a href="mailto:info@yoursite.com">merinmoy4@gmail.com</a></li>
+						<li><a href="http://freehtml5.co">Hemmm</a></li>
 					</ul>
 				</div>
 

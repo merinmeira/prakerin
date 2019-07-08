@@ -239,8 +239,8 @@
 							<div class="fh5co-staff">
 								<img src="assets/frontend/images/merin.jpg" alt="Free HTML5 Templates by FreeHTML5.co">
 								<h3>Merin Meira</h3>
-								<strong class="role">CEO, Founder</strong>
-								<p>Quos quia provident conse culpa facere ratione maxime commodi voluptates id repellat velit eaque aspernatur expedita.</p>
+								<strong class="role">Moto Hidup :</strong>
+								<p>Janganlah Menjadi Manusia Bar-Bar. :V</p>
 								<ul class="fh5co-social-icons">
 									<li><a href="#"><i class="icon-facebook"></i></a></li>
 									<li><a href="#"><i class="icon-twitter"></i></a></li>
@@ -251,14 +251,14 @@
 						</div>
 						<div class="side animate-box">
 							<div class="col-md-12 col-md-offset-0 text-center fh5co-heading fh5co-heading-sidebar">
-								<h2><span>Latest Posts</span></h2>
+								<h2><span>Seputar Bar-Bar</span></h2>
 							</div>
 							<div class="blog-entry">
 								<a href="#">
 									<img src="assets/frontend/images/sunshine.jpg" class="img-responsive" alt="">
 									<div class="desc">
 										<span class="date">Dec. 25, 2016</span>
-										<h3>Most Beautiful Site in 2016</h3>
+										<h3>The Panturas</h3>
 									</div>
 								</a>
 							</div>
@@ -267,7 +267,7 @@
 									<img src="assets/frontend/images/jason.jpg" class="img-responsive" alt="">
 									<div class="desc">
 										<span class="date">Dec. 25, 2016</span>
-										<h3>Most Beautiful Site in 2016</h3>
+										<h3>Jason Ranti</h3>
 									</div>
 								</a>
 							</div>
@@ -276,7 +276,7 @@
 									<img src="assets/frontend/images/ikhsan.jpg" class="img-responsive" alt="">
 									<div class="desc">
 										<span class="date">Dec. 25, 2016</span>
-										<h3>Most Beautiful Site in 2016</h3>
+										<h3>Ikhsan Sekuter</h3>
 									</div>
 								</a>
 							</div>
@@ -323,16 +323,16 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(images/panturas.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/beatles.jpg);"></div>
 			</div>
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(images/banda.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/banda.jpg);"></div>
 			</div>
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(images/jason.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/jason.jpg);"></div>
 			</div>
 			<div class="col-md-3 nopadding animate-box">
-				<div class="insta" style="background-image: url(images/stone.jpg);"></div>
+				<div class="insta" style="background-image: url(assets/frontend/images/stone.jpg);"></div>
 			</div>
 		</div>
 	</div>
@@ -347,21 +347,21 @@
 				<div class="col-md-4 col-md-push-1">
 					<h4>Links</h4>
 					<ul class="fh5co-footer-links">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Blog</a></li>
-						<li><a href="#">Lifestyle</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="/">Home</a></li>
+						<li><a href="/blog">Blog</a></li>
+						<li><a href="/blog">Lifestyle</a></li>
+						<li><a href="/about">About</a></li>
+						<li><a href="/contact">Contact</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-4 col-md-push-1">
 					<h4>Contact Information</h4>
 					<ul class="fh5co-footer-links">
-						<li>198 West 21th Street, <br> Suite 721 New York NY 10016</li>
-						<li><a href="tel://1234567920">+ 1235 2355 98</a></li>
-						<li><a href="mailto:info@yoursite.com">info@yoursite.com</a></li>
-						<li><a href="http://freehtml5.co">FreeHTML5.co</a></li>
+						<li>28 Mei 2003 <br> Bandung, Jawa Barat</li>
+						<li><a href="tel://1234567920">08996992681</a></li>
+						<li><a href="mailto:info@yoursite.com">merinmoy4@gmail.com</a></li>
+						<li><a href="http://freehtml5.co">Hemmm</a></li>
 					</ul>
 				</div>
 

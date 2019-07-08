@@ -23,6 +23,13 @@ Route::get('/about', function () {
 Route::get('/blog', function () {
     return view('blog');
 });
+Route::get('/admin', function () {
+    return view('welcome');
+});
+
+Route::resource('admin/artikel', 'ArtikelController');
+route::resource('admin/tag', 'TagController');
+route::resource('admin/kategori', 'KategoriController');
 
 Auth::routes();
 

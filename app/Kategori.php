@@ -7,23 +7,38 @@ use Session;
 
 class Kategori extends Model
 {
-    protected $fillable = [
-        'judul', 'slug', 'foto', 'konten', 'id_user', 'id_kategori'
-    ];
+    protected $fillable =  ['nama_kategori', 'slug'];
     public $timestamps = true;
 
-    public function kategori()
+    public function artikel()
     {
-        return $this->belongsTo('App\Kategori', 'id_kategori');
+        return $this->hasMany('App\Artikel', 'id_kategori');
     }
 
-    public function user()
+    public static function boot()
     {
-        return  $this->belongsTo('App\User', 'id_user');
+        parent::boot();
+        self::deleting(function ($kategori) {
+            // mengecek apakah penulis masih punya buku
+            if ($kategori->artikel->count() > 0) {
+                // menyiapkan pesan eror
+                $html = 'Kategori tidak bisa dihapus karena masih digunakan oleh Artikel';
+                $html .= '<ul>';
+                foreach ($kategori->artikel as $data) {
+                    $html .= "<li>$data->judul</li>";
+                }
+                $html .= '</ul>';
+                Session::flash("flash_notification", [
+                    "level" => "danger",
+                    "message" => $html
+                ]);
+                // membatalkan proses penghapusan
+                return false;
+            }
+        });
     }
-
-    public function tag()
+    public function getRouteKeyName()
     {
-        return  $this->belongsToMany('App\Tag', 'artikel_tag', 'id_anrtikel', 'id_tag');
+        return 'slug';
     }
 }
