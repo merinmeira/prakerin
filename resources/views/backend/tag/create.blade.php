@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{asset('assets/backend/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css')}}">
 <!-- ======================= LINE AWESOME ICONS ===========================-->
 <link rel="stylesheet" href="{{asset('assets/backend/assets/css/icons/line-awesome.min.css')}}">
-<link rel="stylesheet" href="{{  asset('assets/backend/assets/css/icons/simple-line-icons.css')}}">
+<link rel="stylesheet" href="{{asset('assets/backend/assets/css/icons/simple-line-icons.css')}}">
 <!-- ======================= DRIP ICONS ===================================-->
 <link rel="stylesheet" href="{{asset('assets/backend/assets/css/icons/dripicons.min.css')}}">
 <!-- ======================= MATERIAL DESIGN ICONIC FONTS =================-->
@@ -59,19 +59,18 @@
 @section('content')
 <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-12">
                 <div class="card">
                     <center>
-                        <div class="card-header">Tambah Kategori</div>
+                        <div class="card-header">Tambah tag</div>
                     </center>
 
                     <div class="card-body">
-                        <form action="{{route('kategori.update', $kategori->id)}}" method="post">
-                            <input type="hidden" name="_method" value="PATCH">
+                        <form action="{{route('tag.store')}}" method="post">
                             {{csrf_field()}}
                             <div class="form-group">
-                                <label for="">Nama</label>
-                                <input class="form-control" type="text" name="nama_kategori" id="" value="{{$kategori->nama_kategori}}">
+                                <label for="">Nama Tag</label>
+                                <input class="form-control" type="text" name="nama_tag" id="">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-outline-info">

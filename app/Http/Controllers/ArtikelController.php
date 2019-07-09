@@ -80,7 +80,10 @@ class ArtikelController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     *
+     *
+     *
+      Display the specified resource.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response

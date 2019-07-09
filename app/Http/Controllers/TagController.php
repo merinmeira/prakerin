@@ -15,7 +15,8 @@ class TagController extends Controller
      */
     public function index()
     {
-        //
+        $tag = Tag::orderBy('created_at', 'desc')->get();
+        return view('backend.tag.index', compact('tag'));
     }
 
     /**
@@ -25,7 +26,7 @@ class TagController extends Controller
      */
     public function create()
     {
-        //
+        return view('backend.tag.create');
     }
 
     /**
@@ -36,7 +37,19 @@ class TagController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama_tag' => 'required|unique:tags'
+        ]);
+        $tag = new Tag();
+        $tag->nama_tag = $request->nama_tag;
+        $tag->slug = str_slug($request->nama_tag, '-');
+        $tag->save();
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Berhasil menyimpan<b>"
+                . $tag->nama_tag . "</b>"
+        ]);
+        return redirect()->route('tag.index');
     }
 
     /**
@@ -58,7 +71,8 @@ class TagController extends Controller
      */
     public function edit($id)
     {
-        //
+        $tag = Tag::findOrfail($id);
+        return view('backend.tag.edit', compact('tag'));
     }
 
     /**
@@ -70,7 +84,19 @@ class TagController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'nama_tag' => 'required'
+        ]);
+        $tag = Tag::findOrfail($id);
+        $tag->nama_tag = $request->nama_tag;
+        $tag->slug = str_slug($request->nama_tag, '-');
+        $tag->save();
+        Session::flash("flash_notification", [
+            "level" => "success",
+            "message" => "Berhasil mengedit<b>"
+                . $tag->nama_tag . "</b>"
+        ]);
+        return redirect()->route('tag.index');
     }
 
     /**
@@ -81,6 +107,13 @@ class TagController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $tag = Tag::findOrfail($id);
+        if (!Tag::destroy($id)) return redirect()->back();
+        Session::flash("flash_notification", [
+            "level" => "Success",
+            "message" => "Berhasil menghapus<b>"
+                . $tag->nama_tag . "</b>"
+        ]);
+        return redirect()->route('tag.index');
     }
 }

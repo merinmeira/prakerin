@@ -14,6 +14,12 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::get('category', function () {
+    return view('category');
+});
+Route::get('single', function () {
+    return view('single');
+});
 Route::get('/contact', function () {
     return view('contact');
 });

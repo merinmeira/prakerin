@@ -41,7 +41,7 @@
                                 <td>{{$data->kategori->nama_kategori}}</td>
                                 <td>{{$data->user->name}}</td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
-                                    style="width:250px; height:250px;" alt="Foto"></td>
+                                    style="width:150px; height:150px;" alt="Foto"></td>
 
 								<td style="text-align: center;">
                                     <form action="{{route('artikel.destroy', $data->id)}}" method="post">
