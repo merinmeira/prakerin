@@ -171,6 +171,18 @@ class ArtikelController extends Controller
      */
     public function destroy($id)
     {
+        $artikel = Artikel::findOrFail($id);
+        $blog = Artikel::findOrfail($id);
+        if ($artikel->foto) {
+            $old_foto = $artikel->foto;
+            $filepath = public_path()
+                . '/assets/img/artikel/' . $artikel->foto;
+            try {
+                File::delete($filepath);
+            } catch (FileNotFoundException $e) {
+                // file sudah dihapus/tidak ada
+            }
+        }
         $artikel->tag()->detach($artikel->id);
         $artikel->delete();
         Session::flash("flash_notification", [
