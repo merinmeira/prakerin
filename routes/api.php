@@ -17,6 +17,10 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+Route::group(['middleware' => 'cors'], function () {
+    // isi Route disini
+});
+
 Route::resource('categories', 'CategoryAPIController', [
     'only' => ['index', 'show', 'store', 'update', 'destroy']
 ]);

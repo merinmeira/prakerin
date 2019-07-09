@@ -1,23 +1,30 @@
+
 @extends('layouts.app')
 
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Dashboard</div>
-
                 <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
+                    {{-- <form action="">
+                    </form> --}}
+                    <div class="form-group">
+                        <label>masukan nama</label>
+                        <input type="text" name="namasiswa" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-success tombol-simpan">Simpan</button>
+                    </div>
+                    <div>
+                        <ul class="data-siswa">
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
 @endsection
