@@ -29,6 +29,7 @@
                                 <th>Slug</th>
                                 <th>Kategori</th>
                                 <th>Penulis</th>
+                                <td>Konten</td>
                                 <th>Foto</th>
                                 <th style="text-align: center;">Aksi</th>
                             </tr>
@@ -40,6 +41,7 @@
                                 <td>{{$data->slug}}</td>
                                 <td>{{$data->kategori->nama_kategori}}</td>
                                 <td>{{$data->user->name}}</td>
+                                <td>{{ $data->konten}}</td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
                                     style="width:150px; height:150px;" alt="Foto"></td>
 

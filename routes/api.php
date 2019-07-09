@@ -25,6 +25,7 @@ Route::resource('categories', 'CategoryAPIController', [
     'only' => ['index', 'show', 'store', 'update', 'destroy']
 ]);
 
-Route::get('siswa', 'SiswaController@index');
+Route::resource('siswa2', 'Siswa2Controller');
+
 Route::resource('contoh', 'Contoh1Controller');
 Route::resource('sekolah', 'SekolahController');

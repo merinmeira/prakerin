@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Siswa2;
 
 class Siswa2Controller extends Controller
 {
@@ -13,7 +14,7 @@ class Siswa2Controller extends Controller
      */
     public function index()
     {
-        $siswa = Siswa::all();
+        $siswa = Siswa2::all();
         $response = [
             'success' => true,
             'data' =>  $siswa,
@@ -40,7 +41,7 @@ class Siswa2Controller extends Controller
      */
     public function store(Request $request)
     {
-        $siswa = new Siswa();
+        $siswa = new Siswa2();
         $siswa->nama = $request->namasiswa;
         $siswa->save();
         $response = [
@@ -93,7 +94,7 @@ class Siswa2Controller extends Controller
      */
     public function destroy($id)
     {
-        $siswa = Siswa::find($id)->delete($id);
+        $siswa = Siswa2::findOrFail($id)->delete();
         $response = [
             'success' => true,
             'data' =>  $siswa,
