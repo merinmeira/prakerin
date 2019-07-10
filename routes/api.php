@@ -30,6 +30,6 @@ Route::resource('contoh', 'Contoh1Controller');
 Route::resource('sekolah', 'SekolahController');
 
 
-Route::resource('artikel', 'Api\ArtikelController');
-Route::resource('kategori', 'Api\KategoriController');
-Route::resource('tag', 'Api\TagController');
+Route::resource('artikel', 'ArtikelsController');
+Route::resource('kategori', 'KategorisController');
+Route::resource('tag', 'TagsController');

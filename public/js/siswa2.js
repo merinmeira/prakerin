@@ -17,7 +17,7 @@ $(function() {
         success: function(berhasil) {
             // console.log(berhasil)
             $.each(berhasil.data, function(key, value) {
-                $(".table-kategori").append(
+                $(".data-kategori").append(
                     `
                     <tr>
                                 <td>${value.nama_kategori}</td>
@@ -33,6 +33,7 @@ $(function() {
     });
 
     // Simpan Data
+
     $(".tombol-simpan").click(function(simpan) {
         simpan.preventDefault();
         var variable_isian_nama = $("input[name=nama_kategori]").val();

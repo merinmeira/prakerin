@@ -37,9 +37,7 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'nama_kategori' => 'required|unique:kategoris'
-        ]);
+
         $kategori = new Kategori();
         $kategori->nama_kategori = $request->nama_kategori;
         $kategori->slug = str_slug($request->nama_kategori, '-');
