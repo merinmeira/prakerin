@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Kategori;
+use App\Artikel;
 
-class KategoriController extends Controller
+class ArtikelController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,7 +15,7 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        return new CategoryCollection(Category::paginate());
+        return new ArtikelCollection(Artikel::paginate());
     }
 
     /**
@@ -25,7 +25,9 @@ class KategoriController extends Controller
      */
     public function create()
     {
-        //
+        $tag = Tag::all();
+        $kategori = Kategori::all();
+        return view('backend.artikel.create', compact('tag', 'kategori'));
     }
 
     /**
@@ -36,7 +38,7 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        return new CategoryResource(Kategori::create($request->all()));
+        return new ArtikelResource(Artikel::create($request->all()));
     }
 
     /**
@@ -47,7 +49,7 @@ class KategoriController extends Controller
      */
     public function show($id)
     {
-        return new CategoryResource($kategori->load(['artikel']));
+        return new ArtikelResource($artikel->load(['user', 'kategori']));
     }
 
     /**
@@ -58,7 +60,11 @@ class KategoriController extends Controller
      */
     public function edit($id)
     {
-        //
+        $artikel = Artikel::findOrFail($id);
+        $kategori = Kategori::all();
+        $tag = Tag::all();
+        $select = $artikel->tag->pluck('id')->toArray();
+        return view('backend.artikel.edit', compact('artikel', 'kategori', 'tag', 'select'));
     }
 
     /**
@@ -70,8 +76,8 @@ class KategoriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $kategori->update($request->all());
-        return new CategoryResource($kategori);
+        $artikel->update($request->all());
+        return new ArtikelResource($artikel);
     }
 
     /**
@@ -82,7 +88,7 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        $kategori->delete();
+        $artikel->delete();
         return response()->json([], \Illuminate\Http\Response::HTTP_NO_CONTENT);
     }
 }

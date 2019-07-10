@@ -88,8 +88,9 @@
             @yield('content')
         </main>
     </div>
-    {{-- <script src="{{ asset('js/siswa.js') }}"></script> --}}
+     <script src="{{ asset('js/siswa.js') }}"></script>
       <script src="{{ asset('js/kategori.js') }}"></script>
+       <script src="{{ asset('js/tag.js') }}"></script>
     @stack('script')
 </body>
 </html>

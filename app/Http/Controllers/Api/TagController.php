@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Kategori;
+use App\Tag;
 
-class KategoriController extends Controller
+class TagController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,11 +15,12 @@ class KategoriController extends Controller
      */
     public function index()
     {
-        return new CategoryCollection(Category::paginate());
+        return new TagCollection(Tag::paginate());
     }
 
     /**
      * Show the form for creating a new resource.
+     *
      *
      * @return \Illuminate\Http\Response
      */
@@ -36,7 +37,7 @@ class KategoriController extends Controller
      */
     public function store(Request $request)
     {
-        return new CategoryResource(Kategori::create($request->all()));
+        return new TagResource(tag::create($request->all()));
     }
 
     /**
@@ -47,7 +48,7 @@ class KategoriController extends Controller
      */
     public function show($id)
     {
-        return new CategoryResource($kategori->load(['artikel']));
+        return new TagResource($tag->load(['artikel']));
     }
 
     /**
@@ -70,8 +71,8 @@ class KategoriController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $kategori->update($request->all());
-        return new CategoryResource($kategori);
+        $tag->update($request->all());
+        return new TagResource($tag);
     }
 
     /**
@@ -82,7 +83,7 @@ class KategoriController extends Controller
      */
     public function destroy($id)
     {
-        $kategori->delete();
+        $tag->delete();
         return response()->json([], \Illuminate\Http\Response::HTTP_NO_CONTENT);
     }
 }

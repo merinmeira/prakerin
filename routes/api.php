@@ -28,4 +28,8 @@ Route::resource('siswa2', 'Siswa2Controller');
 
 Route::resource('contoh', 'Contoh1Controller');
 Route::resource('sekolah', 'SekolahController');
+
+
+Route::resource('artikel', 'Api\ArtikelController');
 Route::resource('kategori', 'Api\KategoriController');
+Route::resource('tag', 'Api\TagController');

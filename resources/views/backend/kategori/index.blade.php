@@ -25,7 +25,7 @@
                     <table id="bs4-table" class="table table-striped table-bordered" style="width:100%">
                         <thead>
                             <tr>
-                                <th>Nama Kategori</th>
+                                <th>Nama_Kategori</th>
                                 <th>Slug</th>
                                 <th style="text-align: center;">Aksi</th>
                             </tr>
