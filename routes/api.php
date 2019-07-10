@@ -17,15 +17,15 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::group(['middleware' => 'cors'], function () {
-    // isi Route disini
-});
+Route::group(['middleware' => 'cors'], function () { });
 
-Route::resource('categories', 'CategoryAPIController', [
-    'only' => ['index', 'show', 'store', 'update', 'destroy']
-]);
+// // Route::resource('categories', 'CategoryAPIController', [
+// //     'only' => ['index', 'show', 'store', 'update', 'destroy']
+// ]);
+
 
 Route::resource('siswa2', 'Siswa2Controller');
 
 Route::resource('contoh', 'Contoh1Controller');
 Route::resource('sekolah', 'SekolahController');
+Route::resource('kategori', 'Api\KategoriController');
