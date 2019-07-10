@@ -35,7 +35,7 @@
                  <a class="navbar-brand" href="{{ url('/admin/tag') }}">
                      Tag
                 </a>
-                 <a class="navbar-brand" href="{{ url('/siswa') }}">
+                 <a class="navbar-brand" href="{{ url('/home') }}">
                     Siswa
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -88,5 +88,8 @@
             @yield('content')
         </main>
     </div>
+    <script src="{{ ('assets/frontend/js/jquery.min.js')}}"></script>
+    <script src="{{ asset('js/siswa.js') }}"></script>
+    @stack('script')
 </body>
 </html>
