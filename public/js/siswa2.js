@@ -77,26 +77,37 @@ $(function() {
     });
 
     // tag
-    $.ajax({
-        url: alamat_tag,
-        method: "GET",
-        dataType: "json",
-        success: function(berhasil) {
-            // console.log(berhasil)
-            $.each(berhasil.data, function(key, value) {
-                $(".table-tag").append(
-                    `
-                <tr>
-                            <td>${value.nama_tag}</td>
-                            <td>${value.slug}</td>
-                            <td><button class="btn btn-danger btn-sm hapus-data-tag" data-id="${
-                                value.id
-                            }">Hapus</button></td>
-                        </tr>
-                `
-                );
-            });
-        }
+    $(document).ready(function() {
+        $(".tag").tag({
+            placeholder: "Nama_tag",
+            minimumInputLength: 3,
+            ajax: {
+                url: "<?=url('/browse/');?>",
+                dataType: "json",
+                delay: 250,
+                data: function(params) {
+                    return {
+                        q: params.term
+                        //tambahkan parameter lainnya di sini jika ada
+                    };
+                },
+                processResults: function(data) {
+                    return {
+                        results: $.map(data, function(item) {
+                            return {
+                                text: item.nama + " - " + item.bagian,
+                                id: item.NIK
+                            };
+                        })
+                    };
+                },
+                cache: true
+            },
+            templateSelection: function(selection) {
+                var result = selection.text.split("-");
+                return result[0];
+            }
+        });
     });
 
     // Simpan Data
