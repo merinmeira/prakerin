@@ -11,9 +11,15 @@
 
     <!-- Scripts -->
     <script src="/js/app.js') }}" ></script>
-    <script src="/assets/ckeditor/ckeditor.js"></script>
+    <script src="/assets/frontend/ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('texteditor');
+    </script>
+    <script>{{ asset('assets/frontend/select2-4.0.7/dist/js/select2.js') }}</script>
+    <script>
+    $(document).ready(function(){
+        $('.select22').select2();
+    });
     </script>
 
     <!-- Fonts -->
@@ -22,6 +28,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script>{{ asset('assets/frontend/select2-4.0.7/dist/css/select2.css') }}</script>
 </head>
 <body>
     <div id="app">

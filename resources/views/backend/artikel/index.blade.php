@@ -13,7 +13,7 @@
 @section('content')
 <section class="page-content container-fluid">
     <div class="row">
-        <div class="col-15">
+        <div class="col-12">
             <div class="card">
                 <h5 class="card-header">Data Tables Artikel</h5><br>
                 <center>
@@ -43,7 +43,7 @@
                                 <td>{{$data->user->name}}</td>
                                 <td> {!!  $data->konten !!}</td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
-                                    style="width:150px; height:150px;" alt="Foto"></td>
+                                    style="width:250px; height:250px;" alt="Foto"></td>
 								<td style="text-align: center;">
                                     <form action="{{route('artikel.destroy', $data->id)}}" method="post">
                                         {{csrf_field()}}
@@ -75,7 +75,7 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
-           var alamat = "http://merinmeira.herokuapp.com/api/article";
+           var alamat = "http://merinmeira.herokuapp.com/api/artikel";
            $.ajax({
                url: alamat,
                method:"GET",
@@ -83,7 +83,7 @@
                success: function(berhasil){
                    console.log(berhasil)
                    $.each(berhasil.data,function (key, val){
-                       $('.data-article').append(
+                       $('.data-artikel').append(
                            `
                            <tr>
                                 <td>${val.nama}</td>
@@ -97,10 +97,15 @@
                    })
                }
            });
-           $('.simpan-article').on('click', function (e){
+           $('.simpan-artikel').on('click', function (e){
                e.preventDefault();
                var nama = $('.nama').val();
            })
         })
     </script>
 @endsection
+<script>
+    $(document).ready(function(){
+        $('#select22').select2();
+    });
+    </script>

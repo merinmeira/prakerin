@@ -62,14 +62,14 @@
             <div class="col-md-12">
                 <div class="card">
                     <center>
-                        <div class="card-header">Tambah Kategori</div>
+                        <div class="card-header">Tambah kategori</div>
                     </center>
 
                     <div class="card-body">
                         <form action="{{route('kategori.store')}}" method="post">
                             {{csrf_field()}}
                             <div class="form-group">
-                                <label for="">Nama</label>
+                                <label for="">Nama kategori</label>
                                 <input class="form-control" type="text" name="nama_kategori" id="">
                             </div>
                             <div class="form-group">
