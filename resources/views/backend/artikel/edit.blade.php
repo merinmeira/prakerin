@@ -94,9 +94,9 @@
                                     </div>
                                     <div class="form-group">
                                             <label for="">Konten</label>
-                                            <textarea class="form-control
+                                            <textarea class="form-control ckeditor
                                             @error('konten') is-invalid @enderror"
-                                            name="konten" id="editor1" required> {{$artikel->konten}}
+                                            name="konten" id="ckeditor" required> {{$artikel->konten}}
                                             </textarea>
                                             @error('konten')
                                             <span class="invalid-feedback" role="alert">

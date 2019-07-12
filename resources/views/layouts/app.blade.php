@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" ></script>
+    <script src="/js/app.js') }}" ></script>
     <script src="/assets/ckeditor/ckeditor.js"></script>
     <script>
         CKEDITOR.replace('texteditor');
@@ -92,9 +92,9 @@
             @yield('content')
         </main>
     </div>
-     <script src="{{ asset('/js/siswa.js') }}"></script>
+     {{-- <script src="{{ asset('/js/siswa.js') }}"></script>
       <script src="{{ asset('/js/kategori.js') }}"></script>
-       <script src="{{ asset('/js/tag.js') }}"></script>
+       <script src="{{ asset('/js/tag.js') }}"></script> --}}
     @stack('script')
 </body>
 </html>

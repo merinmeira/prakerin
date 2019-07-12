@@ -13,7 +13,7 @@
 @section('content')
 <section class="page-content container-fluid">
     <div class="row">
-        <div class="col-12">
+        <div class="col-15">
             <div class="card">
                 <h5 class="card-header">Data Tables Artikel</h5><br>
                 <center>
@@ -41,10 +41,9 @@
                                 <td>{{$data->slug}}</td>
                                 <td>{{$data->kategori->nama_kategori}}</td>
                                 <td>{{$data->user->name}}</td>
-                                <td>{{ $data->konten}}</td>
+                                <td> {!!  $data->konten !!}</td>
                                 <td><img src="{{asset('assets/img/artikel/' .$data->foto. '')}}"
                                     style="width:150px; height:150px;" alt="Foto"></td>
-
 								<td style="text-align: center;">
                                     <form action="{{route('artikel.destroy', $data->id)}}" method="post">
                                         {{csrf_field()}}
